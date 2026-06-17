@@ -1,2 +1,55 @@
-# job-market-research-analytics
-Research-driven analysis of the Indian job market using Python, SQL, and Power BI to identify in-demand skills, hiring trends, salary patterns, and opportunities for aspiring Data Analysts.
+# Indian Job Market Research Analytics
+
+## Project Overview
+This project analyzes the Indian Job Market Dataset 2025 using Python, Pandas, NumPy, and Matplotlib.
+
+## Dataset Information
+- Total Records: 97,929
+- Total Features: 17
+- Source: Indian Job Market Dataset 2025
+
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Git
+- GitHub
+- VS Code
+
+## Analyses Performed
+1. Top Hiring Cities
+2. Highest Paying Cities
+3. Most Demanded Skills
+4. Top Hiring Companies
+5. Salary Distribution
+6. Experience Analysis
+7. Company Rating Analysis
+8. Data Cleaning
+
+## Project Structure
+
+```text
+data/
+images/
+reports/
+dashboards/
+
+city_analysis.py
+skills_analysis.py
+salary_analysis.py
+company_analysis.py
+experience_analysis.py
+rating_analysis.py
+data_cleaning.py
+```
+
+## Key Findings
+- Identified top hiring cities in India.
+- Identified highest-paying job locations.
+- Found most in-demand skills.
+- Analyzed company ratings and hiring trends.
+- Studied salary and experience distributions.
+
+## Author
+Yeruva Venkata Sai Deepthi
