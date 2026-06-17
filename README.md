@@ -51,5 +51,19 @@ data_cleaning.py
 - Analyzed company ratings and hiring trends.
 - Studied salary and experience distributions.
 
+## Visualizations
+
+### Top Hiring Cities
+![Top Hiring Cities](images/top%2010%20hiring%20cities.png)
+
+### Highest Paying Cities
+![Highest Paying Cities](images/top%2010%20highest%20paying%20cities.png)
+
+### Most Demanded Skills
+![Most Demanded Skills](images/top%2015%20most%20demanded%20skills.png)
+
+### Top Hiring Companies
+![Top Hiring Companies](images/top%2015%20hiring%20companies.png)
+
 ## Author
 Yeruva Venkata Sai Deepthi
