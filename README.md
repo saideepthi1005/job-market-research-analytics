@@ -1,69 +1,85 @@
-# Indian Job Market Research Analytics
+# Indian Job Market Analytics Dashboard
 
 ## Project Overview
-This project analyzes the Indian Job Market Dataset 2025 using Python, Pandas, NumPy, and Matplotlib.
 
-## Dataset Information
-- Total Records: 97,929
-- Total Features: 17
-- Source: Indian Job Market Dataset 2025
+The Indian Job Market Analytics Dashboard is an end-to-end Data Analytics project designed to analyze hiring trends, salary patterns, skill demand, and experience requirements across the Indian job market. The project leverages Python for data cleaning and transformation and Power BI for interactive data visualization and business intelligence reporting.
 
-## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Git
-- GitHub
-- VS Code
+The dataset contains over 98,000 job postings collected from various industries and locations across India. The dashboard enables recruiters, job seekers, students, and analysts to gain valuable insights into market demand, compensation trends, and hiring requirements.
 
-## Analyses Performed
-1. Top Hiring Cities
-2. Highest Paying Cities
-3. Most Demanded Skills
-4. Top Hiring Companies
-5. Salary Distribution
-6. Experience Analysis
-7. Company Rating Analysis
-8. Data Cleaning
+## Tools & Technologies
 
-## Project Structure
+* Python
+* Pandas
+* NumPy
+* Power BI Desktop
+* Power Query
+* DAX
+* Git & GitHub
 
-```text
-data/
-images/
-reports/
-dashboards/
+## Dashboard Pages
 
-city_analysis.py
-skills_analysis.py
-salary_analysis.py
-company_analysis.py
-experience_analysis.py
-rating_analysis.py
-data_cleaning.py
-```
+### Executive Summary
 
-## Key Findings
-- Identified top hiring cities in India.
-- Identified highest-paying job locations.
-- Found most in-demand skills.
-- Analyzed company ratings and hiring trends.
-- Studied salary and experience distributions.
+Provides a high-level overview of the job market, including:
 
-## Visualizations
+* Total Job Postings
+* Total Hiring Companies
+* Average Salary
+* Average Experience Required
+* Top Hiring Cities
+* Top Hiring Companies
 
-### Top Hiring Cities
-![Top Hiring Cities](images/top%2010%20hiring%20cities.png)
+### Skills & Demand Analysis
 
-### Highest Paying Cities
-![Highest Paying Cities](images/top%2010%20highest%20paying%20cities.png)
+Analyzes the most in-demand skills across job postings:
 
-### Most Demanded Skills
-![Most Demanded Skills](images/top%2015%20most%20demanded%20skills.png)
+* Top Skills by Job Count
+* Skill Demand Distribution
+* Interactive Skill Filtering
+* Skill-Based Hiring Trends
 
-### Top Hiring Companies
-![Top Hiring Companies](images/top%2015%20hiring%20companies.png)
+### Salary Analysis
+
+Explores compensation patterns across the market:
+
+* Average Salary
+* Highest Salary
+* Minimum Salary
+* Top Paying Cities
+* Top Paying Companies
+* Salary Distribution Insights
+
+### Experience Analysis
+
+Examines experience requirements for different roles:
+
+* Average Experience Required
+* Maximum Experience Required
+* Minimum Experience Required
+* Experience Distribution
+* Cities Requiring Higher Experience
+* Companies Requiring Higher Experience
+
+## Key Insights
+
+* Analyzed 98K+ job postings from the Indian job market.
+* Identified leading hiring cities and organizations.
+* Discovered the most demanded skills across industries.
+* Evaluated salary trends and high-paying opportunities.
+* Analyzed experience requirements across job categories.
+* Built an interactive multi-page Power BI dashboard for data-driven decision making.
+
+## Business Value
+
+This dashboard helps:
+
+* Job seekers identify market-demanded skills.
+* Students understand career opportunities.
+* Recruiters analyze hiring trends.
+* Organizations evaluate compensation benchmarks.
+* Analysts derive actionable insights from labor market data.
 
 ## Author
-Yeruva Venkata Sai Deepthi
+
+**Yeruva Venkata Sai Deepthi**
+
