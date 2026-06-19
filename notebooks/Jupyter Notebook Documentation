@@ -1,0 +1,164 @@
+# Jupyter Notebook Documentation
+
+## Overview
+
+This notebook contains the exploratory data analysis (EDA) performed on the Indian Job Market dataset. The analysis was conducted using Python, Pandas, NumPy, and Matplotlib to understand hiring trends, salary patterns, skill demand, and experience requirements.
+
+---
+
+## Dataset Exploration
+
+### Load Dataset
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+pd.set_option('display.max_columns', None)
+
+df = pd.read_excel('../data/cleaned_indian_job_market_dataset.xlsx')
+
+df.head()
+```
+
+### Dataset Shape
+
+```python
+print("Rows:", df.shape[0])
+print("Columns:", df.shape[1])
+```
+
+### Column Information
+
+```python
+df.columns.tolist()
+```
+
+### Missing Values
+
+```python
+df.isnull().sum().sort_values(ascending=False)
+```
+
+### Data Types
+
+```python
+df.info()
+```
+
+### Duplicate Records
+
+```python
+df.duplicated().sum()
+```
+
+---
+
+## Hiring Trends Analysis
+
+### Top Hiring Cities
+
+```python
+top_cities = df['location'].value_counts().head(10)
+
+plt.figure(figsize=(10,5))
+top_cities.plot(kind='bar')
+plt.title('Top 10 Hiring Cities')
+plt.xlabel('City')
+plt.ylabel('Job Count')
+plt.show()
+```
+
+### Top Hiring Companies
+
+```python
+top_companies = df['companyName'].value_counts().head(10)
+
+plt.figure(figsize=(10,5))
+top_companies.plot(kind='bar')
+plt.title('Top 10 Hiring Companies')
+plt.xlabel('Company')
+plt.ylabel('Job Count')
+plt.show()
+```
+
+---
+
+## Skills Analysis
+
+### Most Demanded Skills
+
+```python
+top_skills = df['tagsandskills'].value_counts().head(15)
+
+plt.figure(figsize=(10,6))
+top_skills.plot(kind='barh')
+plt.title('Top 15 Most Demanded Skills')
+plt.xlabel('Job Count')
+plt.show()
+```
+
+---
+
+## Salary Analysis
+
+### Salary Statistics
+
+```python
+df[['minimumSalary', 'maximumSalary']].describe()
+```
+
+### Highest Paying Cities
+
+```python
+df.groupby('location')['maximumSalary'].mean().sort_values(ascending=False).head(10)
+```
+
+---
+
+## Experience Analysis
+
+### Experience Statistics
+
+```python
+df[['minimumExperience', 'maximumExperience']].describe()
+```
+
+### Experience Distribution
+
+```python
+df['experience'].value_counts().head(10)
+```
+
+---
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Jupyter Notebook
+
+---
+
+## Outcome
+
+The insights generated from this notebook were used to create an interactive Power BI dashboard consisting of:
+
+1. Executive Summary
+2. Skills & Demand Analysis
+3. Salary Analysis
+4. Experience Analysis
+
+### Key Findings
+
+* Analyzed 98K+ job postings from the Indian job market.
+* Identified top hiring cities and companies.
+* Discovered the most demanded skills across industries.
+* Evaluated salary trends and high-paying opportunities.
+* Analyzed experience requirements across job categories.
+* Built an interactive multi-page Power BI dashboard for business intelligence and decision-making.
+
+The final dashboard provides a comprehensive view of the Indian job market and supports data-driven decision making for job seekers, recruiters, and analysts.
